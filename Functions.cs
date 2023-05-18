@@ -7,4 +7,11 @@ public class Functions
         double result = a + b;
         return result;
     }
+    public double Minus(double a, double b)
+    {
+        double result = a - b;
+        return result;
+    }
+    
+
 }

@@ -2,6 +2,7 @@
 
 Functions functions = new();
 
+string promit;
 double a = 0;
 double b = 0;
 
@@ -12,12 +13,33 @@ Console.WriteLine("Введите второе число: ");
 
 b = double.Parse(Console.ReadLine() ?? string.Empty);
 
-//Вызов функции Plus с помощью try-catch
-try
+Console.WriteLine("Выберите функцию: 1. Плюс, 2. Минус");
+promit = Console.ReadLine() ?? string.Empty;
+
+if (promit == "1")
 {
-    Console.WriteLine($"Результат {functions.Plus(a, b)}");
+    //Вызов функции Plus с помощью try-catch
+    try
+    {
+        Console.WriteLine($"Результат {functions.Plus(a, b)}");
+    }
+    catch(Exception e)
+    {
+        Console.WriteLine(e);
+    }
 }
-catch(Exception e)
+
+else if (promit == "2")
 {
-    Console.WriteLine(e);
+    //Вызов функции Minus с помощью try-catch
+    try
+    {
+        Console.WriteLine($"Результат {functions.Minus(a, b)}");
+    }
+    catch(Exception e)
+    {
+        Console.WriteLine(e);
+    }
 }
+
+
