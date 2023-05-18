@@ -2,7 +2,9 @@
 
 public class Functions
 {
-    
-    
-   
+    public double Plus(double a, double b)
+    {
+        double result = a + b;
+        return result;
+    }
 }
