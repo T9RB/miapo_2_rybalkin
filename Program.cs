@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-using Miapo_Rybalkin;
+﻿using Miapo_Rybalkin;
 
 Functions functions = new();
 
@@ -7,9 +6,17 @@ double a = 0;
 double b = 0;
 
 Console.WriteLine("Введите первое число: ");
-a = double.Parse(Console.ReadLine());
+a = double.Parse(Console.ReadLine() ?? string.Empty);
 
 Console.WriteLine("Введите второе число: ");
-b = double.Parse(Console.ReadLine());
+b = double.Parse(Console.ReadLine() ?? string.Empty);
 
-Console.WriteLine($"Результат {functions.Plus(a, b)}");
+//Вызов функции Plus с помощью try-catch
+try
+{
+    Console.WriteLine($"Результат: {functions.Plus(a, b)}");
+}
+catch (Exception e)
+{
+    Console.WriteLine(e);
+}
