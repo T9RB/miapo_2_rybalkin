@@ -21,3 +21,33 @@ catch(Exception e)
 {
     Console.WriteLine(e);
 }
+
+//Вызов функции Minus с помощью try-catch
+try
+{
+    Console.WriteLine($"Результат {functions.Minus(a, b)}");
+}
+catch(Exception e)
+{
+    Console.WriteLine(e);
+}
+
+//Вызов функции Multiplication с помощью try-catch
+try
+{
+    Console.WriteLine($"Результат {functions.Multiplication(a, b)}");
+}
+catch(Exception e)
+{
+    Console.WriteLine(e);
+}
+
+//Вызов функции Division с помощью try-catch
+try
+{
+    Console.WriteLine($"Результат {functions.Division(a, b)}");
+}
+catch(Exception e)
+{
+    Console.WriteLine(e);
+}
