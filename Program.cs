@@ -11,5 +11,11 @@ a = double.Parse(Console.ReadLine());
 
 Console.WriteLine("Введите второе число: ");
 b = double.Parse(Console.ReadLine());
-
-Console.WriteLine($"Результат {functions.Plus(a, b)}");
+try
+{
+    Console.WriteLine($"Результат {functions.Plus(a, b)}");
+}
+catch(Exception e)
+{
+    Console.WriteLine(e);
+}
