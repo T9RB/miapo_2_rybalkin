@@ -1,4 +1,4 @@
-﻿namespace Miapo_Rybalkin;
+
 
 public class Functions
 {
@@ -7,6 +7,5 @@ public class Functions
         double result = a / b;
         return result;
     }
-
 
 }
