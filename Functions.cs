@@ -2,10 +2,9 @@
 
 public class Functions
 {
- function-multiplication
-    public double Multiplication(double a, double b)
+    public double Division(double a, double b)
     {
-        double result = a * b;
+        double result = a / b;
         return result;
     }
 
