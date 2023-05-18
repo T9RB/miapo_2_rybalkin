@@ -12,10 +12,10 @@ Console.WriteLine("Введите второе число: ");
 
 b = double.Parse(Console.ReadLine() ?? string.Empty);
 
-//Вызов функции Plus с помощью try-catch
+//Вызов функции Division с помощью try-catch
 try
 {
-    Console.WriteLine($"Результат {functions.Plus(a, b)}");
+    Console.WriteLine($"Результат {functions.Division(a, b)}");
 }
 catch(Exception e)
 {
